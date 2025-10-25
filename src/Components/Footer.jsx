@@ -14,7 +14,9 @@ function Footer() {
             <h4 className="mb-10 capitalize text-zinc-600">Socials</h4>
             <div>
               {["Instagram", "Twitter (x?)", "LinkedIn"].map((ele, idx) => (
-                <a className="block mt-1 capitalize text-zinc-600">{ele}</a>
+                <a key={idx} className="block mt-1 capitalize text-zinc-600">
+                  {ele}
+                </a>
               ))}
             </div>
           </div>
@@ -22,7 +24,9 @@ function Footer() {
             <h4 className="mb-10 capitalize text-zinc-600">sitemap</h4>
             <div>
               {["Home", "Work", "careers", "contacts"].map((ele, idx) => (
-                <a className="block mt-1 capitalize text-zinc-600">{ele}</a>
+                <a key={idx} className="block mt-1 capitalize text-zinc-600">
+                  {ele}
+                </a>
               ))}
             </div>
           </div>

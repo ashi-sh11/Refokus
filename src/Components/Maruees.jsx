@@ -48,8 +48,8 @@ function Maruees() {
   ];
   return (
     <div className="py-20 mt-20">
-      {image.map((items) => (
-        <Maruee urls={items} />
+      {image.map((items, index) => (
+        <Maruee key={index} urls={items} />
       ))}
     </div>
   );

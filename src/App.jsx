@@ -6,8 +6,10 @@ import Products from "./Components/Products";
 import Maruees from "./Components/Maruees";
 import Cards from "./Components/Cards";
 import Footer from "./Components/Footer";
+import LocomotiveScroll from "locomotive-scroll";
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className="h-full w-full bg-zinc-900 text-white ">
       <Navbar />
