@@ -46,11 +46,18 @@ function Maruees() {
       "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/666359b8724afca0a36e7e8d_633c148cf63c4467416f9bea_61ee848c05ba9c9caff5fd64_yahoo.svg",
     ],
   ];
+
   return (
-    <div className="py-20 mt-20">
-      {image.map((items, index) => (
-        <Maruee key={index} urls={items} />
-      ))}
+    <div className="py-1 mt-60 mb-1 w-full bg-white">
+      <div className="space-y-6">
+        {image.map((items, index) => (
+          <Maruee
+            key={index}
+            imagesurls={items}
+            direction={index % 2 === 0 ? "left" : "right"}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -7,6 +7,7 @@ import Maruees from "./Components/Maruees";
 import Cards from "./Components/Cards";
 import Footer from "./Components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
+import HighEndAwards from "./Components/HighEndAwards";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -17,6 +18,7 @@ function App() {
       <Stripes />
       <Products />
       <Maruees />
+      {/* <HighEndAwards /> */}
       <Cards />
       <Footer />
     </div>
